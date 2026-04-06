@@ -14,8 +14,12 @@ hugo new site page-framework
 go mod init github.com/sosnus/page-factory/page-framework
 ```
 
+## AI Commands
+```bash
+ollama run mistral
+```
 
-## wake up agents
+## OLDwake up agents
 ```bash
 ollama create agent theme-agent --model mistral-7b --prompt-file agents/theme-agent.txt
 ollama create agent content-agent --model mistral-7b --prompt-file agents/content-agent.txt
