@@ -9,10 +9,29 @@ sudo snap install hugo #should install version 0.160
 ```bash
 hugo new site page-framework
 ```
+
+## Add info to config.toml
+```toml
+[module]
+  [[module.imports]]
+    disable = false
+    ignoreConfig = false
+    ignoreImports = false
+    path = 'github.com/theNewDynamic/gohugo-theme-ananke/v2'
+```
+
 ## active go mod
 ```bash
 go mod init github.com/sosnus/page-factory/page-framework
 ```
+
+## active go mod
+```bash
+hugo server -M
+```
+
+
+
 
 ## AI Commands
 ```bash
