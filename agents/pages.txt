@@ -1,0 +1,4 @@
+create pages:
+contact
+information
+rules of this page
