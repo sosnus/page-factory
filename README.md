@@ -38,7 +38,7 @@ hugo server -M
 ollama run mistral
 ```
 
-## OLDwake up agents
+## OLD wake up agents
 ```bash
 ollama create agent theme-agent --model mistral-7b --prompt-file agents/theme-agent.txt
 ollama create agent content-agent --model mistral-7b --prompt-file agents/content-agent.txt
@@ -47,4 +47,21 @@ ollama create agent content-agent --model mistral-7b --prompt-file agents/conten
 ## Models
 ```bash
 ollama run hf.co/bartowski/Llama-3.2-3B-Instruct-GGUF:Q4_K_M
+```
+
+
+# hugo
+
+## hugo commands
+
+### build new pages
+```bash
+# Uses default.md archetype
+hugo new content/posts/my-post.md
+
+# Uses archetypes/blog.md if it exists, otherwise default.md
+hugo new -k blog content/posts/my-post.md
+
+# Or organize by folder - Hugo auto-applies archetype matching the folder name
+hugo new content/blog/my-post.md  # tries archetypes/blog.md first
 ```
