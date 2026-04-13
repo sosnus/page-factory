@@ -15,7 +15,7 @@ favicon = "/media/img/misc/ico.ico"
 
 [menu]
   [[menu.main]]
-    name = "Home"
+    name = "Home page"
     url = "/"
     weight = 1
   [[menu.main]]
