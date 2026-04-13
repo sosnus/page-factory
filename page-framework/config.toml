@@ -12,3 +12,17 @@ title = "My Hugo Site" # change this before release #TODO
 
 
 favicon = "/media/img/misc/ico.ico"
+
+[menu]
+  [[menu.main]]
+    name = "Home"
+    url = "/"
+    weight = 1
+  [[menu.main]]
+    name = "About"
+    url = "/about/"
+    weight = 2
+  [[menu.main]]
+    name = "Contact"
+    url = "/contact/"
+    weight = 3
