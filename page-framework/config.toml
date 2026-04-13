@@ -5,6 +5,6 @@
     ignoreImports = false
     path = 'github.com/theNewDynamic/gohugo-theme-ananke/v2'
 
-baseURL = "https://example.com/"
-languageCode = "en-us"
-title = "My Hugo Site"
+baseURL = "https://example.com/" # change this before release #TODO
+languageCode = "en-us" # change this before release #TODO
+title = "My Hugo Site" # change this before release #TODO
