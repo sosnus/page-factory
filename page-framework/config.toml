@@ -8,3 +8,7 @@
 baseURL = "https://example.com/" # change this before release #TODO
 languageCode = "en-us" # change this before release #TODO
 title = "My Hugo Site" # change this before release #TODO
+
+
+
+favicon = "/media/img/misc/ico.ico"
