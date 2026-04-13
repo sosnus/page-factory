@@ -1,0 +1,10 @@
+{{ define "main" }}
+  {{ if .Params.cascade.featured_image }}
+    <div class="w-100" style="background-image: url('{{ .Params.cascade.featured_image }}'); background-size: cover; height: 400px;"></div>
+  {{ end }}
+  <article class="pa4 pa6-ns nested-copy-line-height">
+    <section class="w-100 mw-none">
+      {{ .Content }}
+    </section>
+  </article>
+{{ end }}
