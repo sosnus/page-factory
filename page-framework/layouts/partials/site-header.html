@@ -1,0 +1,45 @@
+<header>
+  <nav class="top-menu">
+    <div class="menu-left">
+      <span class="page-name">{{ .Title | default "Template page" }}</span>
+    </div>
+    <div class="menu-right">
+      <a href="{{ relURL "contact" }}">Contact</a>
+      <a href="{{ relURL "about" }}">About</a>
+    </div>
+  </nav>
+</header>
+
+<style>
+  .top-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #f5f5f5;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .menu-left {
+    flex: 1;
+  }
+  
+  .page-name {
+    font-weight: bold;
+    font-size: 1.2rem;
+  }
+  
+  .menu-right {
+    display: flex;
+    gap: 1.5rem;
+  }
+  
+  .menu-right a {
+    text-decoration: none;
+    color: #333;
+  }
+  
+  .menu-right a:hover {
+    color: #0066cc;
+  }
+</style>
