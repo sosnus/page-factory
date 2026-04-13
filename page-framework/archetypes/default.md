@@ -6,5 +6,5 @@ tags: []
 categories: []
 description: ''
 cascade:
-  featured_image: '/media/img/background/background-1.jpg'
+  featured_image: '/media/img/background/background-2.jpg'
 ---
