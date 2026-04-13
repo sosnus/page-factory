@@ -1,9 +1,11 @@
 {{ define "main" }}
-  {{ if .Params.cascade.featured_image }}
-    <div class="w-100" style="background-image: url('{{ .Params.cascade.featured_image }}'); background-size: cover; height: 400px;"></div>
-  {{ end }}
-  <article class="pa4 pa6-ns nested-copy-line-height">
-    <section class="w-100 mw-none">
+  <div class="bg-primary-color" style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('{{ .Params.cascade.featured_image }}') center/cover;">
+    <div style="height: 400px; display: flex; align-items: center; justify-content: center;">
+      <h1 class="f1 fw7 white tc" style="text-shadow: 2px 2px 4px rgba(0,0,0,0.7);">{{ .Title }}</h1>
+    </div>
+  </div>
+  <article class="pt4 pb4" style="max-width: 900px; margin: 0 auto;">
+    <section class="w-100 mw-none ph4 ph0-l">
       {{ .Content }}
     </section>
   </article>
