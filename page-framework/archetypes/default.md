@@ -1,12 +1,10 @@
-+++
-date = '{{ .Date }}'
-draft = false
-title = '{{ replace .File.ContentBaseName "-" " " | title }}'
-
-[cascade]
-    featured_image = '/media/img/background/background-1.jpg'
-
-tags = []
-categories = []
-description = ''
-+++
+---
+date: '{{ .Date }}'
+draft: false
+title: '{{ replace .File.ContentBaseName "-" " " | title }}'
+tags: []
+categories: []
+description: ''
+cascade:
+  featured_image: '/media/img/background/background-1.jpg'
+---
