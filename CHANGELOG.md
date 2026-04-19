@@ -3,9 +3,18 @@
 * color theme
 * fix icon
 * nazwa storny po lewo klikalna
-* 2 stylegenerowania menu
+* 2 style generowania menu
+* menu zmiany języka
+* multilang
 
-# DONE
+
+## Done 2026.04.19
+* powrót od strony głównej
+* nazwa storny zawsze górny lewy róg
+
+
+
+# DONE 2026.04.12 and ealier
 * background img
 * archetype
 * add menu to subpages

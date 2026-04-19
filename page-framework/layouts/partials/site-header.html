@@ -1,7 +1,9 @@
 <header>
   <nav class="top-menu">
     <div class="menu-left">
-      <span class="page-name">{{ .Title | default "Template page" }}</span>
+      <!-- <span class="page-name">{{ .Title | default "Template page" }}</span> -->
+      <!-- <a class="page-name" href="{{ relURL "/" }}">{{ .Title | default "Template page" }}</a> -->
+      <a class="page-name" href="{{ relURL "/" }}">{{ site.Home.Title }}</a>
     </div>
     <div class="menu-right">
       <a href="{{ relURL "contact" }}">Contact</a>
@@ -27,7 +29,13 @@
   .page-name {
     font-weight: bold;
     font-size: 1.2rem;
+    text-decoration: none;
+    color: inherit;
   }
+  
+  /* .page-name:hover {
+    color: #0066cc;
+  } */
   
   .menu-right {
     display: flex;
