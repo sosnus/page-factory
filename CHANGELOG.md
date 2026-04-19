@@ -6,7 +6,7 @@
 * 2 style generowania menu
 * menu zmiany języka
 * multilang
-
+* podwójna grafika
 
 ## Done 2026.04.19
 * powrót od strony głównej
