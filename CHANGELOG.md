@@ -11,6 +11,7 @@
 ## Done 2026.04.19
 * powrót od strony głównej
 * nazwa storny zawsze górny lewy róg
+* usunąć sztuczne menu na poczatku strony
 
 
 
