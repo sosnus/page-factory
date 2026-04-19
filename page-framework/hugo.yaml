@@ -1,28 +1,42 @@
+baseURL: "https://example.com/"
+languageCode: "en-us"
+title: "Page-framework"
+defaultContentLanguage: en
+
+favicon: "/media/img/misc/ico.ico"
+
+module:
+  imports:
+  - path: 'github.com/theNewDynamic/gohugo-theme-ananke/v2'
+
 languages:
   en:
     label: English
     locale: en-US
     menus:
       main:
-      - name: Home
-        url: /
-        weight: 1
+      # - name: Home
+      #   url: /
+      #   weight: 1
       - name: Contact
-        pageRef: /contact
+        url: /en/contact/
         weight: 10
-      - name: Services
-        pageRef: /services
+      - name: About
+        url: /en/about/
         weight: 20
+      - name: Debug
+        url: /en/debug-page/
+        weight: 30
     weight: 1
   pl:
     label: Polski
     locale: pl-PL
     menus:
       main:
-      - name: Strona główna
-        url: /
-        weight: 1
+      # - name: Strona główna
+      #   url: /
+      #   weight: 1
       - name: Kontakt
-        pageRef: /contact
+        pageRef: /pl/contact/
         weight: 10
     weight: 2

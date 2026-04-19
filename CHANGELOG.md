@@ -12,6 +12,7 @@
 * powrót od strony głównej
 * nazwa storny zawsze górny lewy róg
 * usunąć sztuczne menu na poczatku strony
+* usunuecue config na rzecz hugo.yaml
 
 
 
