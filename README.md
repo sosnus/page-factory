@@ -1,6 +1,17 @@
 # page-factory
 
+## version
+
+* should install version **0.160.1*
+
 ## install
+
+## install windows (choco)
+```bash
+choco install hugo-extended
+```
+
+## install linux
 ```bash
 sudo snap install hugo #should install version 0.160
 ```
@@ -48,6 +59,7 @@ ollama create agent content-agent --model mistral-7b --prompt-file agents/conten
 ```bash
 ollama run hf.co/bartowski/Llama-3.2-3B-Instruct-GGUF:Q4_K_M
 ```
+
 
 
 # hugo
