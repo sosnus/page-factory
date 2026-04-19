@@ -1,0 +1,28 @@
+languages:
+  en:
+    label: English
+    locale: en-US
+    menus:
+      main:
+      - name: Home
+        url: /
+        weight: 1
+      - name: Contact
+        pageRef: /contact
+        weight: 10
+      - name: Services
+        pageRef: /services
+        weight: 20
+    weight: 1
+  pl:
+    label: Polski
+    locale: pl-PL
+    menus:
+      main:
+      - name: Strona główna
+        url: /
+        weight: 1
+      - name: Kontakt
+        pageRef: /contact
+        weight: 10
+    weight: 2
