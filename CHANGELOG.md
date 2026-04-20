@@ -3,12 +3,12 @@
 * color theme
 * fix icon
 * nazwa storny po lewo klikalna
-* 2 style generowania menu
 * menu zmiany języka
 * multilang
-* podwójna grafika
 
 ## Done 2026.04.19
+* 2 style generowania menu - jeden usunieto
+* podwójna grafika
 * powrót od strony głównej
 * nazwa storny zawsze górny lewy róg
 * usunąć sztuczne menu na poczatku strony

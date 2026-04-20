@@ -5,8 +5,8 @@ title: 'Kontakt'
 tags: []
 categories: []
 description: ''
-cascade:
-  featured_image: '/media/img/background/background-2.jpg'
+# cascade:
+  # featured_image: '/media/img/background/background-2.jpg'
 ---
 
-To jest storna kontaktowa
+To jest strona kontaktowa
