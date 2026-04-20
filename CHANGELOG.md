@@ -13,7 +13,7 @@
 * nazwa storny zawsze górny lewy róg
 * usunąć sztuczne menu na poczatku strony
 * usunuecue config na rzecz hugo.yaml
-
+* dodano forsowanie języka
 
 
 # DONE 2026.04.12 and ealier
