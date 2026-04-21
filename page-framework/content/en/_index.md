@@ -2,8 +2,7 @@
 title: "Page-framework"
 date: 2026-04-06
 draft: false
-# type: "homepage"
-layout: "home"
+featured_image: '/media/img/background/background-1.jpg'
 cascade:
   featured_image: '/media/img/background/background-1.jpg'
 ---
