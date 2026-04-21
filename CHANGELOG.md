@@ -2,11 +2,12 @@
 * footer
 * color theme
 * fix icon
-* nazwa storny po lewo klikalna
-* menu zmiany języka
-* multilang
+* multilang - na kazej podstronie?
 
 ## Done 2026.04.19
+* multilang
+* nazwa storny po lewo klikalna
+* menu zmiany języka
 * 2 style generowania menu - jeden usunieto
 * podwójna grafika
 * powrót od strony głównej
