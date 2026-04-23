@@ -6,7 +6,8 @@
 
 
 ## Done 2026.04.23
-* 
+* CI/CD
+* deploy as release (ZIP)
 
 ## Done 2026.04.19
 * multilang
