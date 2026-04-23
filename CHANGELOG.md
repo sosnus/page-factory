@@ -4,6 +4,10 @@
 * fix icon
 * multilang - na kazej podstronie?
 
+
+## Done 2026.04.23
+* 
+
 ## Done 2026.04.19
 * multilang
 * nazwa storny po lewo klikalna
