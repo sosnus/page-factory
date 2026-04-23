@@ -27,7 +27,9 @@ jobs:
 
       # 4️⃣ Debug public folder
       - name: Debug public folder
-        run: ls -l page-framework/public
+        run: |
+          ls -l page-framework
+          pwd
 
       # 5️⃣ Set timestamp
       - name: Set timestamp
