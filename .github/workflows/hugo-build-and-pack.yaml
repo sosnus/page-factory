@@ -10,35 +10,36 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      # 1️⃣ Checkout repository
       - name: Checkout code
         uses: actions/checkout@v4
 
-      # 2️⃣ Setup Hugo
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v3
         with:
           hugo-version: '0.160.0'
           extended: true
 
-      # 3️⃣ Build Hugo site
       - name: Build Hugo site
         run: hugo --minify --source page-framework --destination public
 
-      # 4️⃣ Create timestamp
+      - name: Debug public folder
+        run: ls -l
+
       - name: Set timestamp
         id: timestamp
-        run: |
-          echo "CURRENT_TIME=$(date '+%Y-%m-%d_%H-%M-%S')" >> $GITHUB_ENV
+        run: echo "CURRENT_TIME=$(date '+%Y-%m-%d_%H-%M-%S')" >> $GITHUB_ENV
 
-      # 5️⃣ Zip the output
       - name: Package output
         run: |
-          ZIP_NAME="out-${CURRENT_TIME}.zip"
-          zip -r "$ZIP_NAME" public
-          echo "ZIP_NAME=$ZIP_NAME" >> $GITHUB_ENV
+          if [ -d "public" ]; then
+            ZIP_NAME="out-${CURRENT_TIME}.zip"
+            zip -r "$ZIP_NAME" public
+            echo "ZIP_NAME=$ZIP_NAME" >> $GITHUB_ENV
+          else
+            echo "Error: public folder not found!"
+            exit 1
+          fi
 
-      # 6️⃣ Upload artifact (v4)
       - name: Upload artifact
         uses: actions/upload-artifact@v4
         with:
