@@ -1,4 +1,4 @@
-name: Build Hugo and Store Artifact
+name: Build Hugo and Publish Release
 
 on:
   push:
@@ -6,47 +6,58 @@ on:
       - main
 
 jobs:
-  build-and-archive:
+  build-and-release:
     runs-on: ubuntu-latest
 
     steps:
+      # 1️⃣ Checkout code
       - name: Checkout code
         uses: actions/checkout@v4
 
+      # 2️⃣ Setup Hugo
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v3
         with:
           hugo-version: '0.160.0'
           extended: true
 
+      # 3️⃣ Build Hugo site
       - name: Build Hugo site
-        run: hugo --minify --source page-framework --destination ../public
+        run: hugo --minify --source page-framework --destination public
 
+      # 4️⃣ Debug public folder
       - name: Debug public folder
         run: ls -l
 
-      - name: Debug public folder 2
-        run: |
-          cd page-framework
-          ls -l
-
+      # 5️⃣ Set timestamp
       - name: Set timestamp
         id: timestamp
         run: echo "CURRENT_TIME=$(date '+%Y-%m-%d_%H-%M-%S')" >> $GITHUB_ENV
 
+      # 6️⃣ Package output
       - name: Package output
         run: |
-          if [ -d "public" ]; then
-            ZIP_NAME="out-${CURRENT_TIME}.zip"
-            zip -r "$ZIP_NAME" public
-            echo "ZIP_NAME=$ZIP_NAME" >> $GITHUB_ENV
-          else
-            echo "Error: public folder not found!"
-            exit 1
-          fi
+          ZIP_NAME="out-${CURRENT_TIME}.zip"
+          zip -r "$ZIP_NAME" public
+          echo "ZIP_NAME=$ZIP_NAME" >> $GITHUB_ENV
 
-      - name: Upload artifact
-        uses: actions/upload-artifact@v4
+      # 7️⃣ Create or update release
+      - name: Create Release
+        id: create_release
+        uses: softprops/action-gh-release@v2
         with:
-          name: hugo-site-${{ env.CURRENT_TIME }}
-          path: ${{ env.ZIP_NAME }}
+          tag_name: hugo-build-${{ env.CURRENT_TIME }}
+          name: Hugo Build ${{ env.CURRENT_TIME }}
+          body: "Automated build of Hugo site at ${{ env.CURRENT_TIME }}"
+          draft: false
+          prerelease: false
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      # 8️⃣ Upload ZIP as release asset
+      - name: Upload release asset
+        uses: softprops/action-gh-release@v2
+        with:
+          files: ${{ env.ZIP_NAME }}
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
