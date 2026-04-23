@@ -6,6 +6,6 @@ tags: []
 categories: []
 description: ''
 ---
-<p>{{ .Site.Title }}</p>
-<p>{{ .Site.Params.title }}</p>
+<!-- <p>{{ .Site.Title }}</p>
+<p>{{ .Site.Params.title }}</p> -->
 Something here
