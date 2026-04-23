@@ -25,12 +25,12 @@ jobs:
           extended: true
 
       - name: Build
-        run: hugo --minify --source page-framework
+        run: hugo --minify --source page-framework # dir here
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./public
+          path: ./page-framework/public # output here
 
   deploy:
     needs: build
