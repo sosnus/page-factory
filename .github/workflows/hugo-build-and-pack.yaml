@@ -20,7 +20,7 @@ jobs:
           extended: true
 
       - name: Build Hugo site
-        run: hugo --minify --source page-framework --destination public
+        run: hugo --minify --source page-framework --destination ../public
 
       - name: Debug public folder
         run: ls -l
