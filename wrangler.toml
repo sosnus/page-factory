@@ -1,0 +1,6 @@
+name = "page-factory"
+main = "worker.js"
+compatibility_date = "2026-04-24"
+
+[assets]
+directory = "./public"
