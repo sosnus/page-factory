@@ -60,6 +60,13 @@ ollama create agent content-agent --model mistral-7b --prompt-file agents/conten
 ollama run hf.co/bartowski/Llama-3.2-3B-Instruct-GGUF:Q4_K_M
 ```
 
+# Cloudflare
+
+## cloudflare workers
+
+```bash
+hugo --minify --source page-framework --destination public
+```
 
 
 # hugo
