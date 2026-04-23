@@ -28,6 +28,7 @@ jobs:
       # 4️⃣ Debug public folder
       - name: Debug public folder
         run: |
+          ls -l .
           ls -l page-framework
           pwd
 
