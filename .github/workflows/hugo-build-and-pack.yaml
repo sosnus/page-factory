@@ -38,9 +38,9 @@ jobs:
           zip -r "$ZIP_NAME" public
           echo "ZIP_NAME=$ZIP_NAME" >> $GITHUB_ENV
 
-      # 6️⃣ Upload artifact
+      # 6️⃣ Upload artifact (v4)
       - name: Upload artifact
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: hugo-site-${{ env.CURRENT_TIME }}
           path: ${{ env.ZIP_NAME }}
