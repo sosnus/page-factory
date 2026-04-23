@@ -8,6 +8,7 @@
 ## Done 2026.04.23
 * CI/CD
 * deploy as release (ZIP)
+* cloudflare workers files (x2)
 
 ## Done 2026.04.19
 * multilang
