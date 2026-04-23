@@ -23,13 +23,14 @@ jobs:
 
       # 3️⃣ Build Hugo site
       - name: Build Hugo site
-        run: hugo --minify --source page-framework --destination page-framework/public
+        run: hugo --minify --source page-framework --destination public
 
       # 4️⃣ Debug public folder
       - name: Debug public folder
         run: |
           ls -l .
           ls -l page-framework
+          # ls -l page-framework/page-framework
           pwd
 
       # 5️⃣ Set timestamp
