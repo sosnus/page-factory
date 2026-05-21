@@ -10,10 +10,14 @@
 * dodać cookies (wybrać dostawcę cookies)
 * wybrać tracking (licznik wejść i podstron)
 * dodać googlowy tracking
+* wybrać odpowiednie rozszerzenie obrazków i kompresję. przeanalizować jakość grafik, wybrać rozmiar grafik
 
 # IDEAS
 * 
 
+# Benchmarki
+* https://pagespeed.web.dev/
+* https://tools.pingdom.com/
 
 ## Done 2026.04.23
 * CI/CD
