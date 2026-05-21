@@ -3,6 +3,16 @@
 * color theme
 * fix icon
 * multilang - na kazej podstronie?
+* generator struktury podstron w markdown
+* domyślna struktura podstron (z możliwym wyłączeniem niektórych modułów)
+* dodać zdjęcia z placeholder generatora
+* zrobić markdownową templatkę do contentu
+* dodać cookies (wybrać dostawcę cookies)
+* wybrać tracking (licznik wejść i podstron)
+* dodać googlowy tracking
+
+# IDEAS
+* 
 
 
 ## Done 2026.04.23
